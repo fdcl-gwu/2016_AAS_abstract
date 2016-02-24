@@ -1,0 +1,77 @@
+% custom list of packages to load
+\ProvidesPackage{AAS_packages}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEFINE USEFUL PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OBSOLETE PACKAGE CHECK
+\RequirePackage[l2tabu,orthodox]{nag}
+
+% -------------------MATH PACKAGES --------------------------------------
+\usepackage[binary-units=true]{siunitx} % SI units
+
+\usepackage{amssymb}  
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm} % bold face letters in math environment
+\usepackage{microtype} % better fonts/apperance
+%----------------------------- GRAPHICS PACKAGES--------------------------
+%\usepackage{geometry} % allows for adjustment of margins/layout of the page
+\usepackage{graphicx} % for pdf, bitmapped graphics files
+\usepackage{subcaption} % make it possible to include more than one captioned figure/table in a single float
+\graphicspath{{./figures/}}% path to images
+
+%------------- CITATION PACKAGES------------------------------
+
+%\usepackage{listings}
+%\usepackage{accents}
+\usepackage{overcite}
+\usepackage{footnpag}	
+%\usepackage{natbib} % allows for other citation styles (Harvard, APA, MLA, etc)
+\usepackage[]{hyperref} % links to stuff
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    bookmarksdepth=2,		   % how many levels do you get bookmarks
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitV},    % fits the width of the page to the window
+    pdftitle={},    % title
+    pdfauthor={Shankar Kulumani},     % author
+    pdfsubject={},   % subject of the document
+    pdfcreator={Shankar Kulumani},   % creator of the document
+    pdfproducer={Shankar Kulumani}, % producer of the document
+    pdfkeywords={}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=black,          % color of internal links (change box color with linkbordercolor)
+    citecolor=black,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=black           % color of external links
+}
+% --------------------------------------
+% MUST BE AFTER HYPERREF!!!!!!!!!
+%------------------------------------------
+\usepackage[noabbrev,capitalize]{cleveref} % get fancy referencing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% OLD PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{setspace} % line spacing  
+%\usepackage{booktabs} % for much better looking tables without vertical seperators
+%\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+%\usepackage{url}
+%\usepackage{float}
+%\usepackage{color}
+%\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% CUSTOM MACROS
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{my_macros}
+
+

@@ -1,0 +1,31 @@
+A computational approach is developed for the systematic design of low-thrust transfers in the planar circular restricted three-body problem. 
+Computational geometric optimal control is applied to compute the reachability set on Poincare sections.
+This formulation of the optimal control problem preserves the underlying geometric features of the optimal trajectory.
+Necessary conditions for optimality are derived and an efficient discrete solution method is proposed to solve the two point boundary value problem. 
+Maximization of the reachability set enables the use of an iterative method to design optimal transfers between periodic orbits. 
+Numerical examples illustrate the benefit of the discrete time formulation.
+
+Outline
+Motivation for low thrust orbital transfer
+	Electric Propulsion systems
+	Small satellites
+Prior work and challenges
+	Optimal control
+	Numerical instability of conventional integration technique
+	Hard to capture the long-term effects of low thrust effectively
+	Difficult to choose initial guess
+	Case specific results, difficult to generalize
+Objective
+	Accurate, numerically stable method for long-term optimal orbital transfer
+	Systematic method to generate optimal transfer orbits between arbitrary initial/terminal position
+Approach
+	Computational geometric optimal control	
+		Geometric integrators
+		Particularly useful to capture the long-term effects of low thrust
+		Numerical optimization technique preserving the underlying geometric features of optimal trajectory
+	Reachbility set of Poincare section
+		Generalize the prior work on control-free orbital mission on CR3BP
+		Maximize reachability set on Poincare section
+		Recursively pick an intermediate point
+		Systematic design of optimal orbital transfer between periodic orbits around any pair of Lagrange points
+Summary of contributions
